@@ -11,7 +11,7 @@
       p {
       font-family: verdana;
       font-size: 20px;
-      }
+      } </style>
    </head>
    <body>
       <p><code>Hey there! 👋 Welcome to Vero-Tech-Company&#39;s GitHub repo! We&#39;re a tight-knit crew of 6 indie programmers from Richieville, Georgia, on a mission to conquer the tech world with our coding skills.</code></p>
