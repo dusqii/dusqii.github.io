@@ -1,3 +1,5 @@
+<html>
+  <style>
 body {
   background-color: black;
   color: white;
@@ -7,6 +9,7 @@ p {
   font-family: comfortaa;
   font-size: 20px;
 }
+    </style>
 <body>
 <p><code>Hey there! 👋 Welcome to Vero-Tech-Company&#39;s GitHub repo! We&#39;re a tight-knit crew of 6 indie programmers from Richieville, Georgia, on a mission to conquer the tech world with our coding skills.</code></p>
 <h1 id="about-us-">About Us:</h1>
@@ -29,7 +32,8 @@ p {
 </blockquote>
 <h3 id="connect-with-us-">Connect with Us:</h3>
 <blockquote>
-  </body>
 <p>Have questions, suggestions, or just want to chat tech? Feel free to drop by and say hello! We&#39;re always up for a good coding conversation.</p>
 </blockquote>
 <h2 id="thanks-for-stopping-by-our-little-corner-of-the-tech-universe-buckle-up-because-with-vero-tech-company-the-coding-adventure-is-just-beginning-">Thanks for stopping by our little corner of the tech universe. Buckle up, because with Vero-Tech-Company, the coding adventure is just beginning! 🚀✨</h2>
+</body>
+</html>
