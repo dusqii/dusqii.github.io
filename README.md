@@ -1,4 +1,4 @@
-<p><code>Hey there! 👋 Welcome to Vero-Tech-Company&#39;s GitHub repo! We&#39;re a tight-knit crew of 6 indie programmers from Richieville, Georgia, on a mission to conquer the tech world with our mad coding skills.</code></p>
+<p><code>Hey there! 👋 Welcome to Vero-Tech-Company&#39;s GitHub repo! We&#39;re a tight-knit crew of 6 indie programmers from Richieville, Georgia, on a mission to conquer the tech world with our coding skills.</code></p>
 <h1 id="about-us-">About Us:</h1>
 <ul>
 <li>Location: Richieville, Georgia 🍑</li>
