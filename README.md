@@ -4,9 +4,7 @@
       body {
       background-color: darkslateblue;
       color: white;
-      }
-      p {
-      font-family: "Lucida Handwriting", cursive;
+      font-family: "Times New Roman", Serif;
       font-size: 20px;
       } </style>
    </head>
