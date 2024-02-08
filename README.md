@@ -2,8 +2,8 @@
    <head>
       <style>
       body {
-      background-color: darkslateblue;
-      color: white;
+      background-color: peachpuff;
+      color: black;
       font-family: "Times New Roman", Serif;
       font-size: 20px;
       } </style>
