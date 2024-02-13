@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <style>
-   body { background: thistle; }
+   body { 
+  background: #ffd8ff; 
+  font-family: Cursive, "Brush Script MT";
+  }
+  
    </style>
    <h1>
       The Jam Website
