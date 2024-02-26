@@ -36,7 +36,7 @@
 <a href="https://dev.to/dusqii" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="dusqii" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/23303416" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="23303416" height="30" width="40" /></a>
 <a href="https://en.pronouns.page/@duskybee">
-<img src="ADD IMAGE URL" alt="pronouns.page" width="64" height="64">
+<img src="https://gitlab.com/uploads/-/system/project/avatar/19998770/logo.png?width=48" alt="pronouns.page" width="64" height="64">
 </a>
   </p>
 
