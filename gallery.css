@@ -50,4 +50,43 @@ nav ul li a:hover {
   float: left;
   outline: solid rgb(245, 169, 184) 3px;
   font-size: 50px;
+  margin-top: 33px;
+}
+
+.card {
+  background-color: pink;
+  border-radius: 6px;
+  outline: solid rgb(245, 169, 184) 3px;
+  display: inline-block;
+}
+
+a {
+  color: black;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  display: inline-block;
+  width: 10px; /* Adjust width and height as needed */
+  height: 10px;
+  background-image: url(https://static-00.iconduck.com/assets.00/external-link-icon-2048x2048-wo7lfgrz.png);
+  background-size: cover;
+  margin-left: 4px; /* Adjust spacing as needed */
+}
+
+a:link {
+  text-decoration: none !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  width: 62%;
+}
+
+#grid1 {
+  grid-column: 1;
+  grid-row: 2;
 }
