@@ -42,3 +42,12 @@ nav ul li a {
 nav ul li a:hover {
   background-color: rgb(245, 169, 184);
 }
+
+/* Style for title */
+#title {
+  background-color: pink;
+  border-radius: 6px;
+  float: left;
+  outline: solid rgb(245, 169, 184) 3px;
+  font-size: 50px;
+}
