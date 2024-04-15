@@ -3,46 +3,6 @@ html {
   margin: 4px;
 }
 
-/* Set background image for body */
-body {
-  background-image: url(https://cdn.create.vista.com/api/media/small/82875966/stock-vector-cute-hand-drawn-seamless-pattern-with-night-sky-and-stars);
-}
-
-/* Navbar */
-.sticky {
-  background-color: pink;
-  border-radius: 6px;
-  outline: solid rgb(245, 169, 184) 3px;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  color: black;
-}
-
-nav ul li a {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333333;
-}
-
-nav ul li a:hover {
-  background-color: rgb(245, 169, 184);
-}
-
 /* Style for title */
 #title {
   background-color: pink;
@@ -58,14 +18,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-/* Style for grid items */
-.card {
-  background-color: pink;
-  border-radius: 6px;
-  outline: solid rgb(245, 169, 184) 3px;
-  display: inline-block;
 }
 
 /* Main grid container */
@@ -120,25 +72,6 @@ ul {
 
 #socials ul li img {
   vertical-align: text-top;
-}
-
-a {
-  color: black;
-  position: relative;
-}
-
-a::after {
-  content: "";
-  display: inline-block;
-  width: 10px; /* Adjust width and height as needed */
-  height: 10px;
-  background-image: url(https://static-00.iconduck.com/assets.00/external-link-icon-2048x2048-wo7lfgrz.png);
-  background-size: cover;
-  margin-left: 4px; /* Adjust spacing as needed */
-}
-
-a:link {
-  text-decoration: none !important;
 }
 
 .grid1 h3,
