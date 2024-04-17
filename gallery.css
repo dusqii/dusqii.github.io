@@ -23,8 +23,3 @@ html {
   align-items: start;
   width: 62%;
 }
-
-#grid1 {
-  grid-column: 1;
-  grid-row: 2;
-}
