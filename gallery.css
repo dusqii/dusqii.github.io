@@ -19,8 +19,14 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 20%); 
   align-items: start;
   width: 62%;
-  column-width: 10%;
+}
+
+#engineer {
+  margin: 0px;
+  padding: 0px;
+  height: 60px;
+  width: auto;
 }
