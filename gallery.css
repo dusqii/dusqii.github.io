@@ -22,4 +22,5 @@ html {
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
   width: 62%;
+  column-width: 10%;
 }
