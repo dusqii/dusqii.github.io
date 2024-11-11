@@ -1,0 +1,42 @@
+body {
+  background-color: #1a1a1a;
+}
+
+.titlecard {
+  background-color: #323232;
+  border-color: #666666;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.titlecard > * {
+  font-size: 1.4rem;
+  text-align: justify;
+  color: #000000;
+}
+
+.titlecard > h3 {
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+button {
+  font-size: 1.4rem;
+  width: 100%;
+  max-width: 25rem;
+  margin-bottom: 1rem;
+  background-color: #323232;
+  border-color: #666666;
+  border-radius: 1em;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
