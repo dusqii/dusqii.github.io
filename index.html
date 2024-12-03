@@ -10,43 +10,55 @@
         button {
             cursor: pointer;
         }
+
+        @keyframes glow {
+            from {
+                background-color: #666;
+                box-shadow: 0 0 10px #666;
+            }
+            to {
+                background-color: #888;
+                box-shadow: 0 0 20px #888;
+            }
+        }
+
+        .glow-button {
+            font-size: 3rem;
+            background-color: #666;
+            box-shadow: 0 0 10px #666;
+            animation: glow 1s ease-in-out infinite alternate;
+            border-color: #666666;
+        }
     </style>
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="titlecard">
-            <h1 class="display-4">Hi!!<img src="assets/plinK.gif" alt="plinK" height="50px" style="float:inline-end;">
-            </h1>
-            <p>This is like a hub website or something idk what to write here yet so this is just placeholder text</p>
-            <hr class="my-4">
-            <p>just use the navigation below for my projects and other stuff i make</p>
+    <header>
+        <div class="container">
+            <div class="titlecard">
+                <h1 class="display-4">Hi!!<img src="assets/plinK.gif" alt="plinK" height="50px" style="float: inline-end;">
+                </h1>
+                <p>This is like a hub website or something idk what to write here yet so this is just placeholder text</p>
+                <hr class="my-4">
+                <p>just use the navigation below for my projects and other stuff i make</p>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div class="container">
-        <a href="https://dusqii.github.io/Personal-Site/"><button style="font-size: 3rem; background-color: #666; box-shadow: 0 0 10px #666; animation: glow 1s ease-in-out infinite alternate; border-color: #666666;">personal site</button></a>
-        <style>
-            @keyframes glow {
-                from {
-                    background-color: #666;
-                    box-shadow: 0 0 10px #666;
-                }
-                to {
-                    background-color: #888;
-                    box-shadow: 0 0 20px #888;
-                }
-            }
-        </style>
-        <a href="https://dusqii.github.io//"><button>Professional Site</button></a>
-        <a href="https://dusqii.github.io/whac-a-mole/"><button>Modified Whack-A-Mole</button></a>
-        <a href="https://dusqii.github.io//"><button>Button 3</button></a>
-        <a href="https://dusqii.github.io//"><button>Button 4</button></a>
-        <a href="https://dusqii.github.io//"><button>Button 5</button></a>
-        <a href="https://dusqii.github.io/cat-gallery"><button>the cat gallery</button></a>
-    </div>
+    <main>
+        <div class="container">
+            <a href="https://dusqii.github.io/Personal-Site/">
+                <button class="glow-button">personal site</button>
+            </a>
+            <a href="https://dusqii.github.io/whac-a-mole/"><button>Modified Whack-A-Mole</button></a>
+            <a href="https://dusqii.github.io/"><button>Button 3</button></a>
+            <a href="https://dusqii.github.io/"><button>Button 4</button></a>
+            <a href="https://dusqii.github.io/"><button>Button 5</button></a>
+            <a href="https://dusqii.github.io/cat-gallery"><button>the cat gallery</button></a>
+        </div>
+    </main>
 
 </body>
 
 </html>
+
