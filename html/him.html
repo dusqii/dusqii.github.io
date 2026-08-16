@@ -1,4 +1,39 @@
 <html>
-    <img src="tree.gif" alt="tree">
-    
+    <style>
+        html, body, button {
+            background-color: black;
+            border: none;
+        }
+
+        .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .interface {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 0vh;
+        }
+
+        .tree {
+            cursor: pointer;
+        }
+
+        button {
+            outline: none;
+        }
+
+    </style>
+
+    <div class="div">
+        <button type="button"><img class="tree" src="/assets/tree.gif" alt="tree"></button>
+    </div>
+    <div class="interface">
+        <img src="/assets/man here.png">
+    </div>
+
 </html>
