@@ -1,28 +1,30 @@
 <html>
-    <style>
-        html, body, button {
-            background-color: black;
-            border: none;
-        }
+<style>
+    html,
+    body,
+    button {
+        background-color: black;
+        border: none;
+    }
 
-        .door,
-        .tree-container,
-        .interface {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .door,
+    .tree-container,
+    .interface {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        .door {
-            height: 90vh;
-        }
+    .door {
+        height: 90vh;
+    }
 
-        .tree-container {
-            height: 80vh;
-            display: none;
-        }
+    .tree-container {
+        height: 80vh;
+        display: none;
+    }
 
-        .interface {
+    .interface {
         display: none;
         position: fixed;
         bottom: 40px;
@@ -31,59 +33,60 @@
         z-index: 10;
     }
 
-        .clickable {
-            cursor: pointer;
-        }
+    .clickable {
+        cursor: pointer;
+    }
 
-        button {
-            outline: none;
-        }
-    </style>
+    button {
+        outline: none;
+    }
+</style>
 
-    <!-- Door -->
-    <div class="door" id="door">
-        <button type="button" id="doorButton">
-            <img class="clickable" src="/assets/door.png" alt="door">
-        </button>
-    </div>
+<!-- Door -->
+<div class="door" id="door">
+    <button type="button" id="doorButton">
+        <img class="clickable" src="/assets/door.png" alt="door">
+    </button>
+</div>
 
-    <!-- Tree -->
-    <div class="tree-container" id="treeContainer">
-        <button type="button" id="treeButton">
-            <img class="clickable" src="/assets/tree.gif" alt="tree">
-        </button>
-    </div>
+<!-- Tree -->
+<div class="tree-container" id="treeContainer">
+    <button type="button" id="treeButton">
+        <img class="clickable" src="/assets/tree.gif" alt="tree">
+    </button>
+</div>
 
-    <!-- Text box / Forgotten Man interface -->
-    <div class="interface" id="interface">
-        <img src="/assets/man here.png" alt="Forgotten Man text box">
-    </div>
+<!-- Text box / Forgotten Man interface -->
+<div class="interface" id="interface">
+    <img src="/assets/man here.png" alt="Forgotten Man text box">
+</div>
 
-    <!-- Music -->
-    <audio id="manMusic" src="/assets/man.ogg" loop></audio>
+<!-- Music -->
+<audio id="manMusic" src="/assets/man.ogg" loop></audio>
 
-    <script>
-        const door = document.getElementById("door");
-        const doorButton = document.getElementById("doorButton");
+<script>
+    const door = document.getElementById("door");
+    const doorButton = document.getElementById("doorButton");
 
-        const treeContainer = document.getElementById("treeContainer");
-        const treeButton = document.getElementById("treeButton");
+    const treeContainer = document.getElementById("treeContainer");
+    const treeButton = document.getElementById("treeButton");
 
-        const interfaceBox = document.getElementById("interface");
+    const interfaceBox = document.getElementById("interface");
 
-        const manMusic = document.getElementById("manMusic");
+    const manMusic = document.getElementById("manMusic");
 
-        // Click door
-        doorButton.addEventListener("click", () => {
-            door.style.display = "none";
-            treeContainer.style.display = "flex";
+    // Click door
+    doorButton.addEventListener("click", () => {
+        door.style.display = "none";
+        treeContainer.style.display = "flex";
 
-            manMusic.play();
-        });
+        manMusic.play();
+    });
 
-        // Click tree
-        treeButton.addEventListener("click", () => {
-            interfaceBox.style.display = "flex";
-        });
-    </script>
+    // Click tree
+    treeButton.addEventListener("click", () => {
+        interfaceBox.style.display = "flex";
+    });
+</script>
+
 </html>
