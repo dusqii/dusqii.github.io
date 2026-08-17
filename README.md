@@ -1,1 +1,1 @@
-we are making a website
+![DUMP HER ASS!](https://deltarune.wiki/images/Tenna_funnytext_dump_her.gif?cb=bmwcbn&h=thumb.php&f=Tenna_funnytext_dump_her.gif)
