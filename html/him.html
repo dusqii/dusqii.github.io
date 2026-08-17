@@ -8,8 +8,11 @@
     }
 
     .door,
-    .tree-container,
-    .interface {
+    .tree-div,
+    #interface1,
+    #interface2,
+    #interface3,
+    #interface4 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,12 +22,15 @@
         height: 90vh;
     }
 
-    .tree-container {
+    .tree-div {
         height: 80vh;
         display: none;
     }
 
-    .interface {
+    #interface1,
+    #interface2,
+    #interface3,
+    #interface4 {
         display: none;
         position: fixed;
         bottom: 40px;
@@ -33,60 +39,127 @@
         z-index: 10;
     }
 
-    .clickable {
+    img {
         cursor: pointer;
     }
 
     button {
         outline: none;
+        cursor: pointer;
     }
 </style>
 
-<!-- Door -->
 <div class="door" id="door">
     <button type="button" id="doorButton">
-        <img class="clickable" src="/assets/door.png" alt="door">
+        <img class="clickable" src="/assets/door.png">
     </button>
 </div>
 
-<!-- Tree -->
-<div class="tree-container" id="treeContainer">
+<div class="tree-div" id="treediv">
     <button type="button" id="treeButton">
-        <img class="clickable" src="/assets/tree.gif" alt="tree">
+        <img class="clickable" src="/assets/tree.gif">
     </button>
 </div>
 
-<!-- Text box / Forgotten Man interface -->
-<div class="interface" id="interface">
-    <img src="/assets/man here.png" alt="Forgotten Man text box">
+<div class="interface" id="interface1">
+    <img src="/assets/man here.gif">
 </div>
 
-<!-- Music -->
-<audio id="manMusic" src="/assets/man.ogg" loop></audio>
+<div class="interface" id="interface2">
+    <img src="/assets/offered.gif">
+</div>
+
+<div class="interface" id="interface3">
+    <img src="/assets/received.gif">
+</div>
+
+<div class="interface" id="interface4">
+    <img src="/assets/not man here.gif">
+</div>
+
+<div class="reset" id="reset">
+    <button type="button" id="resetbutton">
+        <p style="color: white;">Reset</p>
+    </button>
+</div>
+
+<audio id="manogg" src="/assets/man.ogg" loop></audio>
+<audio id="obtain" src="/assets/obtain.mp3"></audio>
+<audio id="blip" src="/assets/blip.wav"></audio>
 
 <script>
     const door = document.getElementById("door");
-    const doorButton = document.getElementById("doorButton");
+    const doorbutton = document.getElementById("doorButton");
 
-    const treeContainer = document.getElementById("treeContainer");
-    const treeButton = document.getElementById("treeButton");
+    const treediv = document.getElementById("treediv");
+    const treebutton = document.getElementById("treeButton");
 
-    const interfaceBox = document.getElementById("interface");
+    const dialogue1 = document.getElementById("interface1");
+    const dialogue2 = document.getElementById("interface2");
+    const dialogue3 = document.getElementById("interface3");
+    const dialogue4 = document.getElementById("interface4");
 
-    const manMusic = document.getElementById("manMusic");
+    const manogg = document.getElementById("manogg");
+    const obtain = document.getElementById("obtain");
+    const blip = document.getElementById("blip");
+    const resetbutton = document.getElementById("resetbutton");
+    
+    resetbutton.addEventListener("click", () => {
+        document.cookie = "egg=false; path=/";
+        location.reload();
+    });
 
     // Click door
-    doorButton.addEventListener("click", () => {
+    doorbutton.addEventListener("click", () => {
         door.style.display = "none";
-        treeContainer.style.display = "flex";
+        treediv.style.display = "flex";
 
-        manMusic.play();
+        manogg.play();
     });
 
     // Click tree
-    treeButton.addEventListener("click", () => {
-        interfaceBox.style.display = "flex";
+    treebutton.addEventListener("click", () => {
+        if (!document.cookie.includes("egg=true")) {
+            dialogue1.style.display = "flex";
+            blip.play();
+        }
     });
+
+    // Click dialogue 1
+    dialogue1.addEventListener("click", () => {
+        dialogue1.style.display = "none";
+        dialogue2.style.display = "flex";
+        blip.play();
+    });
+
+     // Click dialogue 2
+    dialogue2.addEventListener("click", () => {
+        dialogue2.style.display = "none";
+        dialogue3.style.display = "flex";
+        obtain.play();
+        blip.play();
+        document.cookie = "egg=true; path=/";
+    });
+
+    // Click dialogue 3
+    dialogue3.addEventListener("click", () => {
+        dialogue3.style.display = "none";
+    });
+
+    // Click tree after egg
+    treebutton.addEventListener("click", () => {
+        if (document.cookie.includes("egg=true")) {
+            dialogue4.style.display = "flex";
+            blip.play();
+        }
+    });
+
+    //Click dialogue 4
+    dialogue4.addEventListener("click", () => {
+        dialogue4.style.display = "none";
+    });
+
+
 </script>
 
 </html>
